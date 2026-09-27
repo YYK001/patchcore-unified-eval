@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/amazon-science/patchcore-inspection",
+  "commit": "fcaa92f124fb1ad74a7acf56726decd4b27cbcad",
+  "license": "Apache-2.0",
+  "license_file": "../patchcore_official/LICENSE",
+  "notice_file": "../patchcore_official/NOTICE",
+  "upstream_algorithm_modified": false,
+  "checkout": "../patchcore_official",
+  "upstream_pretrained_example_banks_used": false,
+  "adapter": "this directory; wrappers subclass upstream PatchCore/FaissNN/ApproximateGreedyCoresetSampler",
+  "weight": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+  "weight_semantics": "torchvision legacy pretrained=True = IMAGENET1K_V1; DEFAULT is not accepted",
+  "local_scope": "source and Python stdlib validation only; no server access or formal experiment"
+}

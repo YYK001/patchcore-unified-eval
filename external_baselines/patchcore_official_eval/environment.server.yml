@@ -1,0 +1,22 @@
+# Proposed Linux dual-T4 environment; solver/runtime not validated locally.
+name: patchcore-official
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - pytorch-cuda=11.8
+  - faiss-gpu=1.8.0
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - scikit-learn=1.5.2
+  - pillow=10.4.0
+  - tqdm
+  - psutil
+  - pip
+  - pip:
+      - timm==1.0.9
+      - pytest==8.3.3

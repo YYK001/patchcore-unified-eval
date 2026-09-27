@@ -1,0 +1,13 @@
+[
+  ["check", "--dataset", "btad", "--category", "01", "--dataset-root", "/data/btad", "--output-dir", "/runs/btad", "--backbone-weights", "/weights/wide_resnet50_2-95faca4d.pth", "--model-device", "cuda:0", "--coreset-device", "cuda:1", "--nn-device", "cuda:0", "--metric-device", "cuda:0"],
+  ["benchmark", "--dataset", "btad", "--category", "01", "--dataset-root", "/data/btad", "--output-dir", "/runs/bench", "--backbone-weights", "/weights/wide_resnet50_2-95faca4d.pth", "--batch-size", "2"],
+  ["fit", "--dataset", "btad", "--dataset-root", "/data/btad", "--output-dir", "/runs/btad", "--backbone-weights", "/weights/wide_resnet50_2-95faca4d.pth"],
+  ["predict", "--dataset", "btad", "--dataset-root", "/data/btad", "--output-dir", "/runs/btad"],
+  ["evaluate", "--dataset", "btad", "--output-dir", "/runs/btad", "--dataset-root", "/data/btad"],
+  ["fit", "--dataset", "mvtec", "--dataset-root", "/data/mvtec", "--output-dir", "/runs/mvtec", "--backbone-weights", "/weights/wide_resnet50_2-95faca4d.pth"],
+  ["predict", "--dataset", "mvtec", "--dataset-root", "/data/mvtec", "--output-dir", "/runs/mvtec"],
+  ["evaluate", "--dataset", "mvtec", "--output-dir", "/runs/mvtec", "--dataset-root", "/data/mvtec"],
+  ["fit", "--dataset", "visa", "--dataset-root", "/data/visa", "--output-dir", "/runs/visa", "--backbone-weights", "/weights/wide_resnet50_2-95faca4d.pth"],
+  ["predict", "--dataset", "visa", "--dataset-root", "/data/visa", "--output-dir", "/runs/visa"],
+  ["evaluate", "--dataset", "visa", "--output-dir", "/runs/visa", "--dataset-root", "/data/visa"]
+]
