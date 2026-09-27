@@ -13,7 +13,8 @@ from .storage import csv_write
 
 def environment(devices):
     packages = {}
-    for name in ('torch', 'torchvision', 'numpy', 'scipy', 'scikit-learn', 'faiss-gpu', 'faiss-cpu', 'timm', 'Pillow'):
+    for name in ('torch', 'torchvision', 'numpy', 'scipy', 'scikit-learn', 'faiss-gpu', 'faiss-cpu',
+                 'faiss-gpu-cu12', 'faiss-gpu-cu11', 'nvidia-cuda-runtime-cu12', 'nvidia-cublas-cu12', 'timm', 'Pillow'):
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
